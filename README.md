@@ -8,14 +8,6 @@
 AI-powered farmer assistance application developed using Generative AI technologies.
 </p>
 
-<div align="center">
-
-## 📱 Built Using Android Studio + Kotlin + React
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Android_Studio_Trademark.svg" width="120" alt="Android Studio Logo"/>
-
-</div>
-
 ---
 
 # 📌 Internship Project
