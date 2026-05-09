@@ -8,6 +8,14 @@
 AI-powered farmer assistance application developed using Generative AI technologies.
 </p>
 
+<div align="center">
+
+## 📱 Built Using Android Studio + Kotlin + React
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Android_Studio_Trademark.svg" width="120" alt="Android Studio Logo"/>
+
+</div>
+
 ---
 
 # 📌 Internship Project
@@ -16,8 +24,8 @@ AI-powered farmer assistance application developed using Generative AI technolog
 - **Domain:** Android App Development using Generative AI  
 - **Company:** MindMatrix  
 - **Developed By:** Srushti EB  
-- **College:** Alva's College  
-- **Technologies Used:** Kotlin, React, TypeScript, Gemini AI  
+- **College:** Alva's Institute of Engineering and Technology  
+- **Technologies Used:** Kotlin, React, TypeScript, Gemini AI, Jetpack Compose, UI/UX Design  
 
 ---
 
@@ -28,8 +36,12 @@ AI-powered farmer assistance application developed using Generative AI technolog
 - 🤖 Gemini AI integration
 - 🌦 Agriculture support system
 - 📱 Android application using Kotlin
+- 🎨 Modern UI/UX design
 - ⚡ Fast frontend development using React + Vite
 - 🔥 JSON Server support for local API
+- 🌐 Emulator and localhost support
+- 📡 Real-time API integration
+- 🧠 Smart AI response generation
 
 ---
 
@@ -39,45 +51,29 @@ AI-powered farmer assistance application developed using Generative AI technolog
 - React
 - Vite
 - TypeScript
+- HTML5
+- CSS3
 
 ## Android Development
 - Kotlin
 - Android Studio
+- Jetpack Compose
+- Android SDK
 
 ## Backend / API
 - JSON Server
 - Gemini API
 
+## UI/UX
+- Material UI
+- Responsive Design
+- Mobile-Friendly Interface
+
 ## Tools
 - Node.js
 - npm
 - Git & GitHub
-
----
-
-# 📂 Project Structure
-
-```bash
-Raitha-Varta/
-│── android/
-│── src/
-│── public/
-│── components/
-│── services/
-│── db.json
-│── .env.local
-│── package.json
-│── vite.config.ts
-```
-
----
-
-# 📥 Clone Repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/Raitha-Varta.git
-cd Raitha-Varta
-```
+- VS Code
 
 ---
 
@@ -121,7 +117,7 @@ GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 
 # Step 3: Run JSON Server (Important)
 
-If the emulator is not fetching data properly, run JSON Server.
+If the emulator is not fetching data properly or sync issues occur, run JSON Server.
 
 Install JSON Server globally:
 
@@ -165,82 +161,40 @@ Because Android Emulator cannot access localhost directly.
 
 ---
 
-# 🔧 Additional Fix
+# 🔧 Emulator / Sync Error Fix
 
-If port or connection issue occurs:
+If the application is not running in emulator or Gradle sync error occurs:
 
-Run:
+## Clear Cache
+
+```bash
+Remove-Item ".gradle" -Recurse -Force
+Remove-Item "build" -Recurse -Force
+```
+
+---
+
+## Reinstall Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## Run JSON Server Again
+
+```bash
+json-server --watch db.json --port 3001
+```
+
+---
+
+## Start Project
 
 ```bash
 npm run dev -- --host
 ```
-
-Then open:
-
-```bash
-http://YOUR_IP_ADDRESS:5173
-```
-
-inside emulator browser.
-
----
-
-# 🔥 GitHub Upload Steps
-
-## Initialize Git
-
-```bash
-git init
-```
-
----
-
-## Add Files
-
-```bash
-git add .
-```
-
----
-
-## Commit Files
-
-```bash
-git commit -m "Initial Commit - Raitha Varta"
-```
-
----
-
-## Create GitHub Repository
-
-Repository Name:
-
-```bash
-Raitha-Varta
-```
-
----
-
-## Connect Repository
-
-```bash
-git remote add origin https://github.com/YOUR_USERNAME/Raitha-Varta.git
-```
-
----
-
-## Push Code
-
-```bash
-git branch -M main
-git push -u origin main
-```
-
----
-
-# 📸 Screenshots
-
-Add your project screenshots here.
 
 ---
 
@@ -249,9 +203,11 @@ Add your project screenshots here.
 ```text
 android
 kotlin
+jetpack-compose
 react
 vite
 typescript
+ui-ux
 genai
 gemini-api
 farmers
