@@ -5,7 +5,7 @@
 - **Student Name:** Srushti EB  
 - **Institution:** Alva's Institute of Engineering and Technology  
 - **Internship Organization:** MindMatrix  
-- **Specialization:** Android Application Development with Generative AI  
+- **Specialization:** Android Application Development using Generative AI  
 
 ---
 
