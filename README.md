@@ -8,7 +8,6 @@
 
 </div>
 
-
 ---
 
 # 📌 Internship Project
@@ -19,6 +18,18 @@
 - **Developed By:** Srushti EB  
 - **College:** Alva's Institute of Engineering and Technology  
 - **Technologies Used:** Kotlin, React, TypeScript, Gemini AI, Jetpack Compose, UI/UX Design  
+
+---
+
+# 🌐 Live Demo
+
+[Raitha-Varta Live Website](https://raitha-varta.netlify.app/)
+
+---
+
+# 📱 Download APK
+
+[Download Raitha-Varta APK](https://github.com/LearnerSrush/Raitha-Varta/raw/main/Raitha-Varta.apk)
 
 ---
 
@@ -108,11 +119,7 @@ GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 
 ---
 
-# Step 3: Run JSON Server (Important)
-
-If the emulator is not fetching data properly or sync issues occur, run JSON Server.
-
-Install JSON Server globally:
+# Step 3: Run JSON Server
 
 ```bash
 npm install -g json-server
@@ -136,57 +143,29 @@ npm run dev
 
 # 📱 Android Emulator Fix
 
-If localhost is not working inside the Android Emulator:
-
 Use:
 
 ```bash
 http://10.0.2.2:5173
 ```
 
-Instead of:
-
-```bash
-http://localhost:5173
-```
-
-Because Android Emulator cannot access localhost directly.
+Instead of localhost inside Android Emulator.
 
 ---
 
-# 🔧 Emulator / Sync Error Fix
-
-If the application is not running in emulator or Gradle sync error occurs:
-
-## Clear Cache
+# 🔧 Build APK Without Android Studio Sync
 
 ```bash
-Remove-Item ".gradle" -Recurse -Force
-Remove-Item "build" -Recurse -Force
+npm run build
+npx cap copy
+cd android
+.\gradlew.bat assembleDebug
 ```
 
----
+APK Output:
 
-## Reinstall Dependencies
-
-```bash
-npm install
-```
-
----
-
-## Run JSON Server Again
-
-```bash
-json-server --watch db.json --port 3001
-```
-
----
-
-## Start Project
-
-```bash
-npm run dev -- --host
+```text
+android/app/build/outputs/apk/debug/app-debug.apk
 ```
 
 ---
